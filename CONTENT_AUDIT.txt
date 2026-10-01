@@ -1,0 +1,24 @@
+INTERVIEW MASTER FINAL — CONTENT/BUILD AUDIT
+
+Dataset
+- 510 interview questions loaded from the supplied source.
+- 510 concept definitions preserved from the supplied source.
+- 510 question records contain answer, explanation, difficulty, type, tags, topic and verification-source family.
+
+Build validation
+- Compiler: cc
+- Flags: -Wall -Wextra -Werror -std=c11
+- Result: clean successful build.
+- Self-test: 510 questions loaded; answer/explanation fields non-empty; sequential unique IDs; progress recording works.
+- End-to-end CLI smoke test: practice -> reveal answer -> self-assess -> session result -> persistent progress file.
+
+Answer verification note
+The answer layer is original study content, not copied from external websites. It is anchored by topic-level canonical sources listed in data/SOURCES.txt. The project does not claim that every individual answer has been separately audited against an external source in this build. That distinction is intentional so the repository does not overstate its verification status.
+
+Adaptive engine
+- Unseen questions receive high priority.
+- Low mastery increases selection weight.
+- Repeated mistakes increase selection weight.
+- Difficulty can be explicitly selected or chosen adaptively from aggregate mastery.
+- Correct answers increase mastery; incorrect answers decrease mastery and reset the streak; partial answers apply a smaller decrease.
+- Progress is persisted to save/progress.dat.

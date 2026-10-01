@@ -1,0 +1,15 @@
+VERIFICATION BASIS
+
+The question set is based on the supplied Interview Master source.
+Answer content is concise interview guidance and should be maintained as versioned study content.
+Canonical verification families used for review:
+- Oracle Java SE documentation/specifications: https://docs.oracle.com/en/java/
+- Spring Boot reference: https://docs.spring.io/spring-boot/reference/
+- Spring Framework reference: https://docs.spring.io/spring-framework/reference/
+- MDN Web Docs: https://developer.mozilla.org/
+- React documentation: https://react.dev/
+- PostgreSQL documentation: https://www.postgresql.org/docs/
+- IETF HTTP Semantics RFC 9110: https://www.rfc-editor.org/rfc/rfc9110.html
+- OWASP: https://owasp.org/
+
+The program stores the verification-source family with every question. It does not claim that a third-party answer page was copied; the content is original study material.

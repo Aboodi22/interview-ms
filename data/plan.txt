@@ -1,0 +1,16 @@
+15-DAY INTERVIEW PLAN
+Day 1  Java fundamentals and syntax
+Day 2  OOP and collections
+Day 3  Exceptions, generics, streams, memory
+Day 4  Threads and concurrency
+Day 5  Spring Boot
+Day 6  REST, validation, exception handling
+Day 7  Spring Data JPA, transactions, databases
+Day 8  JavaScript fundamentals and async
+Day 9  React/frontend
+Day 10 SQL/database design
+Day 11 Data structures
+Day 12 Algorithms/problem solving
+Day 13 Web, HTTP, networking, DevOps
+Day 14 System design, architecture, security
+Day 15 Full mixed mock interview

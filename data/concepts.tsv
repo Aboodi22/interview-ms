@@ -1,0 +1,511 @@
+id	name	definition
+1	Idempotency	calling multiple times = same result as once
+2	Commutativity	order doesn't change result
+3	Associativity	grouping doesn't change result
+4	Distributivity	factoring across operations
+5	Absorption	a ∧ (a ∨ b) = a
+6	Reflexivity	relation holds with self
+7	Symmetry	if a→b then b→a
+8	Transitivity	a→b, b→c → a→c
+9	Contrapositive	¬q → ¬p equivalent to p → q
+10	Converse	q → p (NOT equivalent)
+11	Inverse	¬p → ¬q
+12	Tautology	always true
+13	Contradiction	always false
+14	Fallacy	invalid reasoning
+15	Modus Ponens	if P→Q and P, then Q
+16	Modus Tollens	if P→Q and ¬Q, then ¬P
+17	Deduction	general → specific
+18	Induction	specific → general
+19	Abduction	best explanation inference
+20	Syllogism	three-part logical reasoning
+21	Monotonicity	adding info doesn't retract conclusions
+22	Determinism	same input → same output always
+23	Non	determinism — multiple possible outputs
+24	Probabilism	outcome expressed as likelihood
+25	Fuzziness	truth as degree 0–1
+26	Biconditional	"""if and only if"""
+27	Exclusive Or	exactly one true
+28	Conjunction	AND
+29	Disjunction	OR
+30	Negation	NOT
+31	Double Negation	¬¬P = P
+32	De Morgan's Law	¬(A∧B) = ¬A∨¬B
+33	Short	Circuit Evaluation — stop when result known
+34	Truthiness	feels true, not necessarily is
+35	Equivalence	same truth value
+36	Predicate	statement with variables
+37	Quantifier	∀ (all), ∃ (exists)
+38	Axiom	assumed true without proof
+39	Lemma	helper proposition
+40	Corollary	follows easily from theorem
+41	Paradox	self-contradictory statement
+42	Recursion	function calls itself
+43	Iteration	repetition via loop
+44	Inductive Hypothesis	assumption in proof by induction
+45	Base Case	termination condition
+46	Infinite Regress	no starting point
+47	Halting Problem	cannot predict if arbitrary program stops
+48	Turing Completeness	can express any computation
+49	Church	Turing Thesis — all computable = Turing-computable
+50	Entropy	information uncertainty/chaos
+51	Binary Search	divide sorted space by half
+52	Linear Search	check every element
+53	Depth	First Search (DFS) — go deep before wide
+54	Breadth	First Search (BFS) — go wide before deep
+55	Dijkstra	shortest path weighted graph
+56	Bellman	Ford — handles negative weights
+57	Kruskal	minimum spanning tree
+58	Prim	minimum spanning tree alternative
+59	A*	heuristic-guided pathfinding
+60	Floyd	Warshall — all-pairs shortest paths
+61	Merge Sort	divide+conquer stable sort
+62	Quick Sort	pivot-based partition
+63	Heap Sort	tree-based selection
+64	Bubble Sort	adjacent swaps
+65	Insertion Sort	build sorted one by one
+66	Selection Sort	pick minimum repeatedly
+67	Radix Sort	digit-based non-comparison
+68	Counting Sort	known range values
+69	Bucket Sort	distribute into buckets
+70	Shell Sort	variable gap insertion sort
+71	Tim Sort	Python/Java built-in hybrid
+72	Kadane's Algorithm	max subarray sum
+73	Floyd's Cycle Detection	tortoise & hare
+74	KMP	pattern matching preprocess
+75	Rabin	Karp — rolling hash search
+76	Z	Algorithm — substring search
+77	Manacher's	longest palindromic substring
+78	Union	Find / Disjoint Set — connect+find sets
+79	Topological Sort	DAG linear order
+80	Tarjan's	strongly connected components
+81	Kosaraju's	two-pass DAG components
+82	Edmonds	Karp — max flow BFS
+83	Greedy	locally optimal choice
+84	Dynamic Programming	memoize subproblems
+85	Memoization	cache results top-down
+86	Tabulation	fill table bottom-up
+87	Divide & Conquer	split → solve → combine
+88	Backtracking	try & undo
+89	Branch & Bound	prune impossible paths
+90	Simulated Annealing	escape local optimum
+91	Genetic Algorithm	evolution-inspired search
+92	Monte Carlo	random sampling estimate
+93	Las Vegas	random, always correct
+94	Bloom Filter	space-efficient set membership
+95	Skip List	probabilistic balanced search
+96	Red	Black Tree — balanced BST
+97	AVL Tree	strictly height-balanced
+98	B	Tree — disk-optimized balanced tree
+99	Trie / Prefix Tree	string paths
+100	Suffix Tree	all substrings index
+101	Fenwick Tree / Binary Indexed Tree	prefix sums
+102	Segment Tree	range queries
+103	Hash Table / Map	key→value O(1)
+104	Linked List	node→node chain
+105	Doubly Linked List	forward+backward links
+106	Circular Linked List	last→first
+107	Stack	Last-In-First-Out (LIFO)
+108	Queue	First-In-First-Out (FIFO)
+109	Deque	double-ended queue
+110	Priority Queue	element-weighted removal
+111	Monotonic Queue	always increasing/decreasing
+112	Heap	parent/child ordered tree
+113	Min	Heap — smallest at top
+114	Max	Heap — largest at top
+115	Graph	vertices + edges
+116	Directed Graph	one-way edges
+117	Undirected Graph	bidirectional edges
+118	Weighted Graph	edges have cost
+119	Acyclic Graph	no cycles
+120	Directed Acyclic Graph (DAG)	ordered no-loop
+121	Adjacency Matrix	n×n connection table
+122	Adjacency List	per-node neighbors
+123	Spanning Tree	connects all nodes no cycle
+124	Shortest Path	minimum edge/cost sum
+125	Longest Common Subsequence	non-contiguous match
+126	Longest Increasing Subsequence	ordered growth
+127	Edit Distance	transform string→string cost
+128	Knapsack	maximize value weight limit
+129	Coin Change	make amount fewest coins
+130	Matrix Chain Multiplication	optimal order
+131	Travelling Salesman	visit all+return minimal
+132	NP	Complete — verifies fast, finds unknown
+133	P	Class — polynomial-time solvable
+134	Big	O Notation — upper bound growth
+135	Big	Ω Notation — lower bound
+136	Big	Θ Notation — tight bound
+137	Amortized Complexity	averaged worst-case
+138	Space Complexity	memory required
+139	In	Place Algorithm — constant extra space
+140	Stable Sort	equal keys preserve order
+141	Online Algorithm	processes sequentially
+142	Offline Algorithm	sees all input first
+143	Deterministic Finite Automaton	finite states
+144	Non	deterministic Finite Automaton — multiple paths
+145	Pushdown Automaton	stack-enhanced state
+146	Turing Machine	infinite tape model
+147	Regular Language	finite automaton-expressible
+148	Context	Free Language — pushdown-expressible
+149	Recursively Enumerable	Turing-recognizable
+150	Decidability	algorithm can answer yes/no
+151	Singleton	exactly one instance exists
+152	Factory Method	create without specifying class
+153	Abstract Factory	families of related objects
+154	Builder	construct step-by-step
+155	Prototype	clone existing instance
+156	Adapter	match incompatible interfaces
+157	Bridge	separate abstraction+implementation
+158	Composite	tree: single=collection
+159	Decorator	add behavior dynamically
+160	Facade	simplify complex subsystem
+161	Flyweight	share to save memory
+162	Proxy	stand-in control access
+163	Chain of Responsibility	pass along handlers
+164	Command	encapsulate request as object
+165	Iterator	traverse collection without exposing
+166	Mediator	centralize communication
+167	Memento	save/restore state
+168	Observer	notify subscribers on change
+169	State	alter behavior with internal state
+170	Strategy	swap algorithm at runtime
+171	Template Method	skeleton, subclasses fill
+172	Visitor	separate algorithm from structure
+173	Repository	centralize data access logic
+174	Unit of Work	coordinate multiple changes
+175	Service Locator	central registry lookup
+176	Dependency Injection	supply from outside
+177	Inversion of Control	framework controls flow
+178	Model	View-Controller (MVC) — separate data/UI/logic
+179	Model	View-ViewModel (MVVM) — data-binding oriented
+180	Model	View-Presenter (MVP) — interface focus
+181	Clean Architecture	concentric dependency rules
+182	Hexagonal / Ports & Adapters	isolate domain
+183	Onion Architecture	core outward layers
+184	Domain	Driven Design (DDD) — model business domain
+185	Bounded Context	explicit model boundary
+186	Ubiquitous Language	shared dev/business terms
+187	Event Sourcing	store all state changes as events
+188	Command Query Responsibility Segregation (CQRS)	read/write models split
+189	Saga	distributed transaction compensation
+190	Strangler Fig	replace legacy incrementally
+191	Circuit Breaker	stop calling failing service
+192	Bulkhead	isolate failures
+193	Retry Pattern	repeat transient failures
+194	Idempotent Consumer	safe duplicate processing
+195	Outbox Pattern	atomic message+db write
+196	Rate Limiting	cap requests per client
+197	Throttling	slow or reject excess
+198	Backpressure	consumer signals producer slowdown
+199	Fan	Out — one input → many outputs
+200	Fan	In — many inputs → one output
+201	Circuit Breaker States	Closed/Open/Half-Open
+202	Fallback	alternative on failure
+203	Dead Letter Queue	unprocessable message holding
+204	Poison Pill	permanently unprocessable message
+205	At	Least-Once — guaranteed delivery, may repeat
+206	At	Most-Once — no repeat, may miss
+207	Exactly	Once — deliver exactly one time
+208	Consistency	all see same data
+209	Availability	always responsive
+210	Partition Tolerance	survive network split
+211	CAP Theorem	pick 2 of Consist/Avail/Partition
+212	PACELC	CAP extended for latency
+213	Strong Consistency	read = latest write
+214	Eventual Consistency	converges over time
+215	Causal Consistency	related updates ordered
+216	Sequential Consistency	program order preserved
+217	Quorum	majority confirm write/read
+218	Sharding	horizontal data split
+219	Replication	copy across nodes
+220	Leader	Follower — one writes, many read
+221	Multi	Leader — multiple writers allowed
+222	Peer	to-Peer — no central authority
+223	Busy	Waiting — loop check condition
+224	Mutex	mutual exclusion lock
+225	Semaphore	permit count limit
+226	Monitor	lock+condition variables
+227	Read	Write Lock — shared read/exclusive write
+228	Condition Variable	wait+notify signal
+229	Race Condition	output depends on execution order
+230	Deadlock	hold each other's locks
+231	Livelock	act but no progress
+232	Starvation	resource never allocated
+233	Critical Section	only one thread at a time
+234	Atomic Operation	indivisible, no partial
+235	Memory Barrier	enforce operation ordering
+236	Thread Pool	reuse worker threads
+237	Coroutine	cooperative lightweight task
+238	Future/Promise	placeholder for async result
+239	Callback	function passed for later execution
+240	Thunk	delayed computation wrapper
+241	Side Effect	change outside local scope
+242	Pure Function	same input → same output, no side effects
+243	Referential Transparency	can replace with value
+244	Immutability	cannot change after creation
+245	Persistent Data Structure	preserve old version
+246	Lazy Evaluation	compute only when needed
+247	Eager Evaluation	compute immediately
+248	Closure	function captures surrounding scope
+249	Currying	multi-arg → single-arg chain
+250	Composition	combine functions → new function
+251	Latency	request→response time
+252	Throughput	operations per time unit
+253	Bandwidth	maximum data rate
+254	Jitter	latency variation
+255	Round	Trip Time (RTT) — send→receive→reply
+256	Time	To-Live (TTL) — discard if aged
+257	Cache Hit	found locally
+258	Cache Miss	must fetch origin
+259	Eviction	remove to free space
+260	Least Recently Used (LRU)	discard oldest unused
+261	Least Frequently Used (LFU)	discard least accessed
+262	First	In-First-Out Cache — age-based ejection
+263	Write	Through — update cache+store together
+264	Write	Back — cache defers to store
+265	Write	Around — write store directly
+266	Cache Invalidation	remove stale entries
+267	Cache Stampede	many recompute expired key
+268	Content Delivery Network (CDN)	edge caching
+269	Edge Computing	process near user
+270	Origin Server	source of truth
+271	Reverse Proxy	protect/balance servers
+272	Load Balancer	distribute traffic
+273	Round	Robin Balancing — rotate sequentially
+274	Least Connections	route to busiest-free
+275	Sticky Session	keep user→same server
+276	Health Check	is service alive?
+277	Graceful Degradation	reduced function, still works
+278	Fail Fast	report error immediately
+279	Fail Open	continue without component
+280	Fail Closed	secure default
+281	Graceful Shutdown	finish work then exit
+282	Warm Shutdown	notify then drain
+283	Cold Start	initialize from zero
+284	Hot Standby	running replica ready
+285	Blue	Green Deployment — switch traffic full
+286	Canary Release	small % rollout
+287	Rolling Update	replace instance-by-instance
+288	Dark Launch	deploy hidden, observe
+289	Feature Flag	toggle without deploy
+290	A/B Testing	compare variants
+291	Observability	can infer state from outside
+292	Monitoring	measure known metrics
+293	Alerting	notify on threshold breach
+294	Tracing	follow request across services
+295	Metrics	numeric time-series data
+296	Logging	event records
+297	Structured Logs	machine-readable format
+298	Sampling	keep subset of telemetry
+299	SLO	Service Level Objective target
+300	SLA	contract penalty agreement
+301	Rate Limiter	deny excess
+302	Concurrency Limit	max simultaneous
+303	Semaphore	concurrent access counter
+304	Exponential Backoff	retry wait doubles
+305	Jitter	randomize to avoid thundering herd
+306	Thundering Herd	many retry simultaneously
+307	Split	Brain — nodes partitioned, both lead
+308	Fencing	prevent stale node writes
+309	Quorum	majority must agree
+310	Heartbeat	alive signal
+311	Gossip Protocol	spread info peer-to-peer
+312	Service Discovery	find instance addresses
+313	Distributed Lock	exclusive access across nodes
+314	Atomic Commit	all succeed or all abort
+315	Two	Phase Commit (2PC) — prepare then commit
+316	Three	Phase Commit — add pre-commit phase
+317	WAL	Write-Ahead Log before apply
+318	Idempotency Key	deduplicate retries
+319	Exactly	Once Delivery — transactional messaging
+320	Poison Message	repeatedly fails
+321	Dead	Letter Topic — park failures
+322	Consumer Group	share load, offset track
+323	Offset	position in stream
+324	Partition	split topic parallel
+325	Replication Factor	copies across nodes
+326	Broker	message routing node
+327	Publisher	sends event
+328	Subscriber	receives event
+329	Event	fact that happened
+330	Command	instruction to do something
+331	Query	request for information
+332	Materialized View	precomputed persisted result
+333	Projection	derived state from events
+334	Snapshot	save state at point in time
+335	Warm	Up — prime cache before serve
+336	Connection Pool	reuse TCP connections
+337	Thread Pool	reuse worker threads
+338	Worker Process	background task handler
+339	Daemon	always-running background service
+340	Supervisor	restart crashed process
+341	Orchestrator	manage cluster scheduling
+342	Control Plane	manage/configure
+343	Data Plane	forward/serve traffic
+344	Sidecar	co-located helper container
+345	Ambassador	proxy/route sidecar
+346	Adapter	translate interface
+347	Config Map	inject config separate
+348	Secret	sensitive encrypted data
+349	Namespace	logical isolation boundary
+350	Ingress	cluster entrypoint routing
+351	DRY	Don't Repeat Yourself
+352	KISS	Keep It Simple, Stupid
+353	YAGNI	You Aren't Gonna Need It
+354	SOLID	5 OOP principles
+355	Single Responsibility	one reason to change
+356	Open/Closed	extend without modify
+357	Liskov Substitution	subtype replaceable
+358	Interface Segregation	small specific contracts
+359	Dependency Inversion	depend on abstractions
+360	Law of Demeter	talk only to immediate friends
+361	Separation of Concerns	partition distinct roles
+362	Coupling	how much modules depend
+363	Cohesion	how well module belongs together
+364	Cyclomatic Complexity	independent paths count
+365	Code Smell	hint deeper problem exists
+366	Refactoring	improve structure not behavior
+367	Technical Debt	deferred cleanup cost
+368	Bogus Dead Code	unreachable/unsued
+369	Magic Number	unexplained literal value
+370	Shotgun Surgery	change many places for one
+371	Feature Envy	method accesses other's data
+372	Data Clump	same vars grouped everywhere
+373	Primitive Obsession	no value object
+374	Long Method	too much happening
+375	God Object	knows too much
+376	Unit Test	smallest piece isolated
+377	Integration Test	pieces work together
+378	End	to-End (E2E) — full user flow
+379	Regression Test	did old break?
+380	Smoke Test	basic sanity check
+381	Sanity Check	quick plausibility
+382	Stress Test	beyond expected load
+383	Load Test	expected concurrent volume
+384	Soak Test	sustained duration stability
+385	Chaos Engineering	intentionally break to verify
+386	Mock	pre-programmed expectations
+387	Stub	canned answers
+388	Fake	working simplified impl
+389	Spy	record calls made
+390	Test Double	generic stand-in
+391	Test Fixture	known starting state
+392	Assertion	expected vs actual check
+393	Red	Green-Refactor — fail→pass→improve
+394	Test Coverage	% exercised lines/branches
+395	Flaky Test	passes/fails unchanged
+396	Continuous Integration	merge+verify frequently
+397	Continuous Delivery	ready to deploy
+398	Continuous Deployment	auto release green
+399	Trunk	Based Development — main only, short branches
+400	GitFlow	feature/release/hotfix branches
+401	Rebase	replay commits onto base
+402	Squash	condense history
+403	Cherry	Pick — apply specific commit elsewhere
+404	Semantic Versioning	MAJOR.MINOR.PATCH
+405	Changelog	document notable changes
+406	Pin Dependency	freeze version
+407	Lockfile	exact dependency tree snapshot
+408	Transitive Dependency	dependency's dependency
+409	Dependency Hell	version conflict resolution
+410	Vulnerability Scan	known flaw check
+411	Lint	enforce style/rule compliance
+412	Static Analysis	inspect without execute
+413	Dynamic Analysis	observe running
+414	Code Review	peer examination
+415	Convention	agreed style/structure
+416	Documentation	explain usage/design
+417	README	project front page guide
+418	Architecture Decision Record	why choice made
+419	Minimal Viable Product	smallest valuable release
+420	Dogfooding	use own product
+421	Churn	rapid code rewrite
+422	Bisect	binary search find breaking change
+423	Golden Master	compare against known output
+424	Property	Based Testing — generate random inputs
+425	Fuzz Testing	malformed/chaotic input
+426	Authentication	who are you?
+427	Authorization	what may you do?
+428	Non	Repudiation — cannot deny sent
+429	Confidentiality	only intended see
+430	Integrity	not altered transit
+431	Availability	accessible when needed
+432	CIA Triad	Confid/Integr/Avail
+433	Encryption	scramble with key
+434	Decryption	recover plaintext
+435	Symmetric	same key both ways
+436	Asymmetric	public+private key pair
+437	Public Key	share openly
+438	Private Key	keep secret
+439	Digital Signature	private sign, public verify
+440	Hash	one-way fixed-size digest
+441	Collision	two inputs same hash
+442	Salt	unique per-input hash randomizer
+443	HMAC	hash+secret key authenticate
+444	JWT	JSON Web Token signed claim
+445	OAuth	delegated authorization
+446	OpenID Connect	identity layer on OAuth
+447	CORS	Cross-Origin Resource Sharing
+448	XSS	Cross-Site Scripting inject
+449	CSRF	Cross-Site Request Forgery
+450	SQL Injection	manipulate query
+451	NoSQL Injection	document database variant
+452	Path Traversal	access outside dir
+453	SSRF	Server-Side Request Forgery
+454	Replay Attack	reuse captured request
+455	Man	in-the-Middle — intercept/modify
+456	Brute Force	try every possibility
+457	Rainbow Table	precomputed hash lookup
+458	Zero Trust	verify every time
+459	Least Privilege	minimum necessary permission
+460	Defense in Depth	overlapping safeguards
+461	Attack Surface	total entry points
+462	Threat Model	enumerate risks
+463	Penetration Test	authorized simulated attack
+464	Compliance	meet standard/regulation
+465	PII	Personally Identifiable Information
+466	Encryption at Rest	stored data protected
+467	Encryption in Transit	moving data protected
+468	Perfect Forward Secrecy	compromise now doesn't expose past
+469	Elliptic Curve	efficient asymmetric math
+470	RSA	classic factoring-based crypto
+471	Prime Number	divisible only by 1/self
+472	Composite	has factors besides 1/self
+473	Greatest Common Divisor	largest shared divisor
+474	Least Common Multiple	smallest shared multiple
+475	Modular Arithmetic	wrap at fixed value
+476	Permutation	ordered rearrangement
+477	Combination	unordered selection
+478	Probability	favorable/total outcomes
+479	Expected Value	weighted average outcome
+480	Variance	spread from mean
+481	Standard Deviation	sqrt(variance)
+482	Median	middle value
+483	Mode	most frequent
+484	Mean	arithmetic average
+485	Normal Distribution	bell curve
+486	Poisson	event count over interval
+487	Uniform	equal likelihood
+488	Correlation	relationship strength
+489	Causation	direct influence
+490	Confounding Variable	hidden factor
+491	Sample Bias	non-representative selection
+492	Significance	unlikely by chance
+493	Machine Learning	learn from data pattern
+494	Supervised	labeled training examples
+495	Unsupervised	find inherent structure
+496	Reinforcement	reward signal guide
+497	Overfitting	memorize, fail new
+498	Underfitting	too simple capture
+499	Epoch	full training set pass
+500	Gradient Descent	error reduce stepwise
+501	Vector	magnitude+direction
+502	Matrix	row×column grid
+503	Tensor	generalized N-dim array
+504	Convolution	filter slide across
+505	Embedding	map to meaningful vector space
+506	Token	smallest unit processed
+507	Attention	focus on relevant parts
+508	Transformer	attention-based architecture
+509	Prompt Engineering	instruct model effectively
+510	Hallucination	confident but false output

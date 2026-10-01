@@ -1,0 +1,6 @@
+*.o
+interview-master
+save/*.dat
+.DS_Store
+.vscode/
+.idea/
